@@ -1,5 +1,5 @@
 # MySQL:
-Some of you might be confused about `SQL` and `MySQL`. The difference is really simple, SQL is a database language whereas MySQL is a database software. MySQL is database software which uses "SQL" language to query the database.  
+Some of you might be confused between `SQL` and `MySQL`. The difference is really simple, SQL is a database language whereas MySQL is a database software. MySQL is database software which uses "SQL" language to query the database.  
 
 Let's know more about MySQL,  
 
