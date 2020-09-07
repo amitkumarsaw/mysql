@@ -57,6 +57,34 @@ We use the `USE` command to select a particular database to work with.
 mysql> USE database_name;
 ```
 
+### SELECT DATABASE() command:    *NOTE: it is different than the SELECT command of DML*
+To see the current database you are working on, we use `select database()` command.
+
+**Syntax:**  
+```mysql
+mysql> select database();
+```
+### CREATE DATABASE command:
+This command creates a new database for the user with a name given by the user.
+
+**Syntax:**  
+```mysql
+mysql> CREATE DATABASE database_name;
+```
+Then we neen to use the database using the `USE` command, `use database_name;`. This will make that database the current working database.  
+
+### DROP DATABASE command:
+The DROP DATABASE statement drops all tables in the database and deletes the database permanently. Therefore, you should be very careful when using this statement.  
+
+**Syntax:**
+```mysql
+mysql> DROP DATABASE database_name;
+```
+
+### 
+
+
+
 
 
 
