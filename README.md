@@ -10,9 +10,13 @@ Some of you might be confused between `SQL` and `MySQL`. The difference is reall
 MySQL is the most popular Open Source Relational SQL Database Management System (RDBMS). MySQL is one of the best RDBMS being used for developing various web-based software applications. It is open source software backed by Oracle.  
 
 ### SQL:
-SQL contains three parts:
+SQL contains three parts:  
+1. Data definition language (DDL)
+1. Data manipulation language (DML)
+1. Data control language (DCL)
 
-1. Data definition language -> Data Definition Language (DDL) statements are used to define the database structure. Data Definition Language  describes how the data should exist in the database.  
+#### Data definition language:
+-> Data Definition Language (DDL) statements are used to define the database structure. Data Definition Language  describes how the data should exist in the database.  
 
 DDL contains following commands:
 - CREATE - to create objects/tables in the database
@@ -22,11 +26,43 @@ DDL contains following commands:
 - COMMENT - add comments to the data dictionary
 - RENAME - rename an object/table  
 
-2. Data manipulation language -> Data Manipulation Language (DML) statements are used for managing data within database objects. DML deals with data manipulation and hence contains the following commands,  
+#### Data manipulation language:
+-> Data Manipulation Language (DML) statements are used for managing data within database objects. DML deals with data manipulation and hence contains the following commands,  
 
 - INSERT
 - SELECT
 - UPDATE
 - DELETE
 
-3. Data control language
+#### Data control language:
+-> Data control language (DCL) allows you to grant the permissions to a user to access specific data in the database.  
+
+It contain commands like,  
+- GRANT
+- REVOKE
+
+### SHOW DATABASES command:
+This command shows all the databases available in your mysql server.  
+**Syntex**
+```mysql
+mysql> show databases;
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
