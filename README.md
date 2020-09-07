@@ -43,10 +43,21 @@ It contain commands like,
 
 ### SHOW DATABASES command:
 This command shows all the databases available in your mysql server.  
-**Syntex**
+
+**Syntax:**
 ```mysql
 mysql> show databases;
 ```
+
+### USE command:
+We use the `USE` command to select a particular database to work with.  
+
+**Syntax:**
+```mysql
+mysql> USE database_name;
+```
+
+
 
 
 
