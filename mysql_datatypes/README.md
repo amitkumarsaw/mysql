@@ -8,7 +8,7 @@ MySQL has a variety of datatypes,
 
 ## Numeric Data Types:
 | Numeric Data Types	| Description                               | Specs       |
-| ------------------- | ----------------------------------------- | ------------------------|
+| ------------------- | :----------------------------------------- | :------------------------|
 | TINYINT            | A very small integer                      | Integer (-128 to 127) |
 | SMALLINT	          | A small integer                           | Integer (-32768 to 32767) |
 | MEDIUMINT	         | A medium-sized integer                    | Integer (-8388608 to 8388607) |
