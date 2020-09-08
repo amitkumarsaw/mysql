@@ -7,7 +7,7 @@ MySQL has a variety of datatypes,
 - Spatial data types
 
 ## > Numeric Data Types:
-| Numeric Data Types	| Description                               | Specs       |
+| Numeric Data Types	| Description                               | Specs                    |
 | ------------------- | :---------------------------------------- | :------------------------|
 | TINYINT             | A very small integer                      | Integer (-128 to 127) |
 | SMALLINT	          | A small integer                           | Integer (-32768 to 32767) |
@@ -25,7 +25,7 @@ MySQL doesn't have its own `Boolian` data type. MySQL uses `TINYINT` to represen
 ## > String data types:
 In MySQL, a string can hold anything from a small text to a binary data such as images or files.  
 
-| string Data Types 	| Description                                                                  | Specs       |
+| string Data Types 	| Description                                                                  | Specs                    |
 | ------------------- | :--------------------------------------------------------------------------- | :------------------------|
 | CHAR	              | A fixed-length nonbinary (character) string                                  | String (0 - 255) |
 | VARCHAR	            | A variable-length non-binary string                                          | String (0 - 255) |
@@ -41,6 +41,40 @@ In MySQL, a string can hold anything from a small text to a binary data such as 
 | LONGTEXT	          | A large non-binary string                                                    | String (0 - 4294967295) |
 | ENUM	              | An enumeration; each column value may be assigned one enumeration member     | One of preset options |
 | SET	                | A set; each column value may be assigned zero or more SET members            | Selection of preset options |
+
+## > Date and Time data types:
+
+| Date & Time Data Types	| Description                                         | Specs                    |
+| ----------------------- | :-------------------------------------------------- | :------------------------|
+| DATE	                  | A date value in CCYY-MM-DD format                   | YYYY-MM-DD |
+| TIME	                  | A time value in hh:mm:ss format                     | HH:MM:SS |
+| DATETIME	              | A date and time value inCCYY-MM-DD hh:mm:ssformat   | YYYY-MM-DD HH:MM:SS |
+| TIMESTAMP	              | A timestamp value in CCYY-MM-DD hh:mm:ss format     | YYYYMMDDHHMMSS |
+| YEAR	                  | A year value in CCYY or YY format                   | CCYY or YY |
+
+## > Spatial data types:
+MySQL supports many spatial data types that contain various kinds of geometrical and geographical values,  
+
+| Date & Time Data Types	| Description                             |
+| ----------------------- | :-------------------------------------- |
+| GEOMETRY	              | A spatial value of any type |
+| POINT	                  | A point (a pair of X-Y coordinates) |
+| LINESTRING	            | A curve (one or more POINT values) |
+| POLYGON	                | A polygon |
+| GEOMETRYCOLLECTION	    | A collection of GEOMETRYvalues |
+| MULTILINESTRING	        | A collection of LINESTRINGvalues |
+| MULTIPOINT	            | A collection of POINTvalues |
+| MULTIPOLYGON	          | A collection of POLYGONvalues |
+
+
+
+
+
+
+
+
+
+
 
 
 
