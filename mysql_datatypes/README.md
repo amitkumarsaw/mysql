@@ -6,7 +6,7 @@ MySQL has a variety of datatypes,
 - Date and Time data types
 - Spatial data types
 
-## Numeric Data Types:
+## - Numeric Data Types:
 | Numeric Data Types	| Description                               | Specs       |
 | ------------------- | :---------------------------------------- | :------------------------|
 | TINYINT             | A very small integer                      | Integer (-128 to 127) |
@@ -19,10 +19,10 @@ MySQL has a variety of datatypes,
 | DOUBLE	            | A double-precision floating point number  | Decimal (24 to 53 digits) |
 | BIT	                | A bit field                               | 1 bit |
 
-## Boolian data types:
+## - Boolian data types:
 MySQL doesn't have its own `Boolian` data type. MySQL uses `TINYINT` to represent `Boolian` data types.  
 
-## String data types:
+## - String data types:
 In MySQL, a string can hold anything from a small text to a binary data such as images or files.  
 
 | string Data Types 	| Description                                                                  | Specs       |
