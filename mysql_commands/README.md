@@ -82,7 +82,7 @@ mysql> DROP DATABASE database_name;
 ```
 
 ### CREATE TABLE command:
-Before the `CREATE TABLE` command first look at [MySQL data types](https://github.com/amitkumarsaw/mysql/tree/master/mysql_datatypes)
+Before the `CREATE TABLE` command first look at [MySQL Data Types](https://github.com/amitkumarsaw/mysql/tree/master/mysql_datatypes).  
 The `CREATE TABLE` command allows us to create a new table in an existing database.  
 
 **Syntax**  
@@ -95,6 +95,19 @@ mysql> CREATE TABLE [IF NOT EXISTS] table_name(
 ) ENGINE=storage_engine;
 ```
 Here we specify the name of the table that we want to create after the `CREATE TABLE` keywords. The table name must be unique within a database. The `IF NOT EXISTS` is optional. It allows us to check if the table that we create already exists in the database. If this is the case, MySQL will ignore the whole statement and will not create any new table.  
+
+We can optionally specify the storage engine for the table in the ENGINE clause.  
+
+**e.g.**  
+```mysql
+CREATE TABLE table1
+( number INT(11) AUTO_INCREMENT,
+name VARCHAR(32) NOT NULL,
+city VARCHAR(32),
+age VARCHAR(7),
+CONSTRAINT key1 PRIMARY KEY (name)
+);
+```
 
 
 
