@@ -57,7 +57,7 @@ We use the `USE` command to select a particular database to work with.
 mysql> USE database_name;
 ```
 
-### SELECT DATABASE() command:    *NOTE: it is different than the SELECT command of DML*
+### SELECT DATABASE() command:
 To see the current database you are working on, we use `select database()` command.
 
 **Syntax:**  
@@ -81,7 +81,20 @@ The DROP DATABASE statement drops all tables in the database and deletes the dat
 mysql> DROP DATABASE database_name;
 ```
 
-### 
+### CREATE TABLE command:
+The `CREATE TABLE` command allows us to create a new table in an existing database.  
+
+**Syntax**  
+```mysql
+mysql> CREATE TABLE [IF NOT EXISTS] table_name(
+   column_1_definition,
+   column_2_definition,
+   …,
+   table_constraints
+) ENGINE=storage_engine;
+```
+Here we specify the name of the table that we want to create after the `CREATE TABLE` keywords. The table name must be unique within a database. The `IF NOT EXISTS` is optional. It allows us to check if the table that we create already exists in the database. If this is the case, MySQL will ignore the whole statement and will not create any new table.  
+
 
 
 
