@@ -82,6 +82,7 @@ mysql> DROP DATABASE database_name;
 ```
 
 ### CREATE TABLE command:
+Before the `CREATE TABLE` command first look at [MySQL data types](https://github.com/amitkumarsaw/mysql/tree/master/mysql_datatypes)
 The `CREATE TABLE` command allows us to create a new table in an existing database.  
 
 **Syntax**  
