@@ -11,13 +11,13 @@ All other 12 rules were derived from this rule.
 
 ### RULE 1 (THE INFORMATION RULE):
 This rule states that all information (user data or metadata), which is stored in the database, must be a value of some table cell. Everything in a database must be stored in table formats.  
-
-*NOTE: Metadata can simply be described as data about data. Metadata provides the basic and relevant information about the data. Metadata functions in SQL Server return information about the database, database objects, database files, file groups etc.  
+```
+NOTE: Metadata can simply be described as data about data. Metadata provides the basic and relevant information about the data. Metadata functions in SQL Server return information about the database, database objects, database files, file groups etc.  
 e.g.  
 `SELECT OBJECT_ID('dbo.DimEmployee') AS 'Object Id'`  
 
 OUTPUT:  
 | Object Id|
 |----------|
-|1133456667|*
-
+|1133456667|
+```
