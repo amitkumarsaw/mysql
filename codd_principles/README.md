@@ -14,5 +14,5 @@ This rule states that all information (user data or metadata), which is stored i
 
 *NOTE: Metadata can simply be described as data about data. Metadata provides the basic and relevant information about the data. Metadata functions in SQL Server return information about the database, database objects, database files, file groups etc.  
 e.g.  
-`SELECT OBJECT_ID('dbo.DimEmployee') AS 'Object Id'*
+`SELECT OBJECT_ID('dbo.DimEmployee') AS 'Object Id'`*
 
