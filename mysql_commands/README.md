@@ -43,6 +43,7 @@ It contain commands like,
 - GRANT
 - REVOKE  
 ---
+---
 ### SHOW DATABASES command:
 This command shows all the databases available in your mysql server.  
 
