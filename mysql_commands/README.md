@@ -42,31 +42,40 @@ DDL contains following commands:
 It contain commands like,  
 - GRANT
 - REVOKE  
-___
-### SHOW DATABASES command:
+
+---
+---
+
+## DATA DEFINITION :
+
+### SHOW DATABASES :
 This command shows all the databases available in your mysql server.  
 
 **Syntax:**
 ```mysql
 mysql> show databases;
 ```
+---
 
-### USE command:
+### USING A DATABASE :
 We use the `USE` command to select a particular database to work with.  
 
 **Syntax:**
 ```mysql
 mysql> USE database_name;
 ```
+---
 
-### SELECT DATABASE() command:
+### SELECT DATABASE() :
 To see the current database you are working on, we use `select database()` command.
 
 **Syntax:**  
 ```mysql
 mysql> select database();
 ```
-### CREATE DATABASE command:
+---
+
+### CREATE DATABASE :
 This command creates a new database for the user with a name given by the user.
 
 **Syntax:**  
@@ -74,14 +83,16 @@ This command creates a new database for the user with a name given by the user.
 mysql> CREATE DATABASE database_name;
 ```
 Then we neen to use the database using the `USE` command, `use database_name;`. This will make that database the current working database.  
+---
 
-### DROP DATABASE command:
+### DROP DATABASE :
 The DROP DATABASE statement drops all tables in the database and deletes the database permanently. Therefore, you should be very careful when using this statement.  
 
 **Syntax:**
 ```mysql
 mysql> DROP DATABASE database_name;
 ```
+---
 
 ### CREATE TABLE command:
 Before the `CREATE TABLE` command first look at [MySQL Data Types](https://github.com/amitkumarsaw/mysql/tree/master/mysql_datatypes).  
@@ -110,6 +121,8 @@ age VARCHAR(7),
 CONSTRAINT key1 PRIMARY KEY (name)
 );
 ```
+---
+
 
 
 
