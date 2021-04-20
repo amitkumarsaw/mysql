@@ -82,7 +82,9 @@ This command creates a new database for the user with a name given by the user.
 ```mysql
 mysql> CREATE DATABASE database_name;
 ```
-Then we neen to use the database using the `USE` command, `use database_name;`. This will make that database the current working database.  
+
+Then we neen to use the database using the `USE` command, `use database_name;`. This will make that database the current working database.   
+
 ---
 
 ### DROP DATABASE :
