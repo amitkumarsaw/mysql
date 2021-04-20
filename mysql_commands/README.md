@@ -15,7 +15,7 @@ SQL contains three parts:
 2. Data manipulation language (DML)
 3. Data control language (DCL)  
 
-==  
+--  
 
 ### Data definition language:
 -> Data Definition Language (DDL) statements are used to define the database structure. Data Definition Language  describes how the data should exist in the database.  
