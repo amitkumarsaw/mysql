@@ -7,7 +7,7 @@ Some of you might be confused between `SQL` and `MySQL`. The difference is reall
 
 ## MySQL: 
 
-MySQL is the most popular Open Source Relational SQL Database Management System (RDBMS). MySQL is one of the best RDBMS being used for developing various web-based software applications. It is open source software backed by Oracle.  
+: MySQL is the most popular Open Source Relational SQL Database Management System (RDBMS). MySQL is one of the best RDBMS being used for developing various web-based software applications. It is open source software backed by Oracle.  
 
 ## SQL:
 SQL contains three parts:  
