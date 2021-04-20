@@ -42,8 +42,7 @@ DDL contains following commands:
 It contain commands like,  
 - GRANT
 - REVOKE  
----
----
+_
 ### SHOW DATABASES command:
 This command shows all the databases available in your mysql server.  
 
