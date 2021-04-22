@@ -98,7 +98,7 @@ The DROP DATABASE statement drops all tables in the database and deletes the dat
 
 **Syntax:**
 ```mysql
-mysql> DROP DATABASE database_name;
+DROP DATABASE database_name;
 ```
 
 ```mysql
@@ -113,7 +113,7 @@ The `CREATE TABLE` command allows us to create a new table in an existing databa
 
 **Syntax**  
 ```mysql
-mysql> CREATE TABLE [IF NOT EXISTS] table_name(
+CREATE TABLE [IF NOT EXISTS] table_name(
    column_1_definition,
    column_2_definition,
    …,
@@ -136,9 +136,49 @@ CONSTRAINT key1 PRIMARY KEY (name)
 ```
 ---
 
+### PRIMARY KEY :
+A primary key is a column or a set of columns that uniquely identifies each row in the table.  
+A primary key column cannot have NULL values.  
+A table can have one an only one primary key.  
 
+**Syntax**
+```mysql
+CREATE TABLE table_name(
+    column_name1 datatype PRIMARY KEY,
+    column_name2 datatype,
+    ...
+);
+```
+**e.g.**
+```mysql
+CREATE TABLE users(
+   id INT AUTO_INCREMENT PRIMARY KEY,
+   user_name VARCHAR(20),
+   pwd VARCHAR(100),
+   email VARCHAR(100)
+);
+```
 
-
+When the primary key has more than one column, you can use the PRIMARY KEY constraint as a table constraint.
+```mysql
+CREATE TABLE table_name(
+    primary_key_column1 datatype,
+    primary_key_column2 datatype,
+    ...,
+    PRIMARY KEY(column_list)
+);
+```
+**e.g.**
+```mysql
+CREATE TABLE roles(
+   user_id INT AUTO_INCREMENT,
+   role_id INT,
+   user_name VARCHAR(50),
+   PRIMARY KEY(role_id, user_id)
+);
+```
+`AUTO_INCREMENT` attribute automatically generates a sequential integer whenever you insert a new row into the table.  
+---
 
 
 
