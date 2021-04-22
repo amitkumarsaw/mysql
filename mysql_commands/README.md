@@ -178,6 +178,7 @@ CREATE TABLE roles(
 );
 ```
 `AUTO_INCREMENT` attribute automatically generates a sequential integer whenever you insert a new row into the table.  
+
 ---
 
 
