@@ -85,6 +85,12 @@ mysql> CREATE DATABASE database_name;
 
 Then we neen to use the database using the `USE` command, `use database_name;`. This will make that database the current working database.   
 
+```mysql
+mysql> CREATE DATABASE [IF NOT EXISTS] database_name;
+```
+
+`IF NOT EXISTS` is an optional clause of the statement. The IF NOT EXISTS clause prevents you from an error of creating a new database that already exists in the database server.
+
 ---
 
 ### DROP DATABASE :
@@ -94,9 +100,14 @@ The DROP DATABASE statement drops all tables in the database and deletes the dat
 ```mysql
 mysql> DROP DATABASE database_name;
 ```
+
+```mysql
+DROP DATABASE [IF EXISTS] database_name;
+```
+
 ---
 
-### CREATE TABLE command:
+### CREATE TABLE :
 Before the `CREATE TABLE` command first look at [MySQL Data Types](https://github.com/amitkumarsaw/mysql/tree/master/mysql_datatypes).  
 The `CREATE TABLE` command allows us to create a new table in an existing database.  
 
@@ -124,6 +135,8 @@ CONSTRAINT key1 PRIMARY KEY (name)
 );
 ```
 ---
+
+
 
 
 
