@@ -51,7 +51,7 @@ It contain commands like,
 ### SHOW DATABASES :
 This command shows all the databases available in your mysql server.  
 
-**Syntax:**
+**Syntax :**
 ```mysql
 mysql> show databases;
 ```
@@ -60,7 +60,7 @@ mysql> show databases;
 ### USING A DATABASE :
 We use the `USE` command to select a particular database to work with.  
 
-**Syntax:**
+**Syntax :**
 ```mysql
 mysql> USE database_name;
 ```
@@ -69,7 +69,7 @@ mysql> USE database_name;
 ### SELECT DATABASE() :
 To see the current database you are working on, we use `select database()` command.
 
-**Syntax:**  
+**Syntax :**  
 ```mysql
 mysql> select database();
 ```
@@ -78,7 +78,7 @@ mysql> select database();
 ### CREATE DATABASE :
 This command creates a new database for the user with a name given by the user.
 
-**Syntax:**  
+**Syntax :**  
 ```mysql
 mysql> CREATE DATABASE database_name;
 ```
@@ -96,7 +96,7 @@ mysql> CREATE DATABASE [IF NOT EXISTS] database_name;
 ### DROP DATABASE :
 The DROP DATABASE statement drops all tables in the database and deletes the database permanently. Therefore, you should be very careful when using this statement.  
 
-**Syntax:**
+**Syntax :**
 ```mysql
 DROP DATABASE database_name;
 ```
@@ -111,7 +111,7 @@ DROP DATABASE [IF EXISTS] database_name;
 Before the `CREATE TABLE` command first look at [MySQL Data Types](https://github.com/amitkumarsaw/mysql/tree/master/mysql_datatypes).  
 The `CREATE TABLE` command allows us to create a new table in an existing database.  
 
-**Syntax**  
+**Syntax :**  
 ```sql
 CREATE TABLE [IF NOT EXISTS] table_name(
    column_1_definition,
@@ -124,7 +124,7 @@ Here we specify the name of the table that we want to create after the `CREATE T
 
 We can optionally specify the storage engine for the table in the ENGINE clause.  
 
-**e.g.**  
+**e.g. :**  
 ```mysql
 CREATE TABLE table1
 ( number INT(11) AUTO_INCREMENT,
@@ -141,7 +141,7 @@ A primary key is a column or a set of columns that uniquely identifies each row 
 A primary key column cannot have NULL values.  
 A table can have one an only one primary key.  
 
-**Syntax**
+**Syntax :**
 ```mysql
 CREATE TABLE table_name(
     column_name1 datatype PRIMARY KEY,
@@ -149,7 +149,7 @@ CREATE TABLE table_name(
     ...
 );
 ```
-**e.g.**
+**e.g. :**
 ```mysql
 CREATE TABLE users(
    id INT AUTO_INCREMENT PRIMARY KEY,
@@ -168,7 +168,7 @@ CREATE TABLE table_name(
     PRIMARY KEY(column_list)
 );
 ```
-**e.g.**
+**e.g. :**
 ```mysql
 CREATE TABLE roles(
    user_id INT AUTO_INCREMENT,
@@ -183,7 +183,7 @@ CREATE TABLE roles(
 
 ### UNIQUE constraint :
 A UNIQUE constraint is an integrity constraint that ensures values in a column or group of columns to be unique.  A UNIQUE constraint can be either a column constraint or a table constraint.  
-**Syntax**
+**Syntax :**
 ```mysql
 CREATE TABLE table_name(
     column_name1 data_type,
@@ -204,7 +204,7 @@ If you define a UNIQUE constraint without specifying a name, MySQL automatically
 [CONSTRAINT constraint_name]
 UNIQUE(column_list)
 ```
-**e.g.**
+**e.g. :**
 ```sql
 CREATE TABLE student (
     student_id INT AUTO_INCREMENT,
@@ -219,7 +219,7 @@ CREATE TABLE student (
 
 ### NOT NULL constraint :
 The NOT NULL constraint is a column constraint that ensures values stored in a column are not NULL.  
-**e.g.**
+**e.g. :**
 ```sql
 CREATE TABLE tasks (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -232,7 +232,7 @@ CREATE TABLE tasks (
 
 ### ALTER TABLE :
 The ALTER TABLE ADD statement allows you to add one or more columns to a table.  
-**syntax**
+**syntax :**
 ```mysql
 ALTER TABLE table_name
 ADD 
@@ -244,33 +244,66 @@ ADD
 `AFTER` is used to add the column after an existing column.
 By default mysql assigns the column the last position.
 
-**e.g.**
+**e.g. :**
 ```mysql
 ALTER TABLE watches
 ADD model VARCHAR(100) NOT NULL;
 ```
 
-#### - ALTER TABLE – Modify columns : 
+#### ALTER TABLE – Modify columns : 
  
 It modifies the column of the table.  
 Suppose we need to change the data type of a column, we can use the `MODIFY` keyword.  
-**e.g.**
+**e.g. :**
 ```mysql
 ALTER TABLE watches
 MODIFY note CHAR(100) NOT NULL;
 ```
 
-#### - ALTER TABLE – Rename a column in a table :
-**e.g.**
+#### ALTER TABLE – Rename a column in a table :
+**e.g. :**
 ```mysql
 ALTER TABLE watches
 CHANGE COLUMN note description VARCHAR(100) NOT NULL;
 ```
+`note` has been changed with `description`.
 
+#### ALTER TABLE – Drop a column :
 
+It is used to delete or drop a column.  
 
+**e.g. :**
+```mysql
+ALTER TABLE watches
+DROP COLUMN description;
+```
 
+#### ALTER TABLE – Rename table :
+**e.g. :**  
+```mysql
+ALTER TABLE watches
+RENAME TO clocks;
+```
 
+### DROP TABLE :
+
+It is used to drop the entire table from a database.  
+
+**Stntax :**
+```mysql
+DROP TABLE table_name
+```
+
+### TRUNCATE TABLE :
+
+- The `TRUNCATE TABLE` statement allows you to delete all data in a table.
+- It is same as the `DELETE` statement used with `WHERE` clause to delete the data of the table. The difference is that the `TRUNCATE TABLE` deletes the whole table and then creates the table structure again instead of deleting the rows one by one.
+- `TRUNCATE` is more efficient then the `DELETE` command.  
+
+**e.g. :**
+```mysql
+TRUNCATE TABLE clocks;
+```
 
 
 
