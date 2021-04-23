@@ -284,6 +284,7 @@ DROP COLUMN description;
 ALTER TABLE watches
 RENAME TO clocks;
 ```
+---
 
 ### DROP TABLE :
 
@@ -304,7 +305,7 @@ DROP TABLE table_name
 ```mysql
 TRUNCATE TABLE clocks;
 ```
-
+---
 
 
 
