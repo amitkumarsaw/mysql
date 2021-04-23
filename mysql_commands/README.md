@@ -112,7 +112,7 @@ Before the `CREATE TABLE` command first look at [MySQL Data Types](https://githu
 The `CREATE TABLE` command allows us to create a new table in an existing database.  
 
 **Syntax**  
-```mysql
+```sql
 CREATE TABLE [IF NOT EXISTS] table_name(
    column_1_definition,
    column_2_definition,
@@ -230,8 +230,41 @@ CREATE TABLE tasks (
 ```
 ---
 
-### 
+### ALTER TABLE :
+The ALTER TABLE ADD statement allows you to add one or more columns to a table.  
+**syntax**
+```mysql
+ALTER TABLE table_name
+ADD 
+    new_column_name column_definition
+    [FIRST | AFTER column_name]
+```
+`[FIRST | AFTER column_name]` specifies the position of the new column.
+`FIRST` is used to add the column at the start.
+`AFTER` is used to add the column after an existing column.
+By default mysql assigns the column the last position.
 
+**e.g.**
+```mysql
+ALTER TABLE watches
+ADD model VARCHAR(100) NOT NULL;
+```
+
+- **ALTER TABLE – Modify columns :**
+It modifies the column of the table.  
+Suppose we need to change the data type of a column, we can use the `MODIFY` keyword.  
+**e.g.**
+```mysql
+ALTER TABLE watches
+MODIFY note CHAR(100) NOT NULL;
+```
+
+- **ALTER TABLE – Rename a column in a table :**
+**e.g.**
+```mysql
+ALTER TABLE watches
+CHANGE COLUMN note description VARCHAR(100) NOT NULL;
+```
 
 
 
