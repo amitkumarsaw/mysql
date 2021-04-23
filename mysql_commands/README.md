@@ -290,7 +290,7 @@ RENAME TO clocks;
 
 It is used to drop the entire table from a database.  
 
-**Stntax :**
+**Syntax :**
 ```mysql
 DROP TABLE table_name
 ```
