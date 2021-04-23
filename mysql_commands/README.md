@@ -181,11 +181,56 @@ CREATE TABLE roles(
 
 ---
 
+### UNIQUE constraint :
+A UNIQUE constraint is an integrity constraint that ensures values in a column or group of columns to be unique.  A UNIQUE constraint can be either a column constraint or a table constraint.  
+**Syntax**
+```mysql
+CREATE TABLE table_name(
+    column_name1 data_type,
+    column_name2 data_type UNIQUE,
+    ...
+);
+```
+```mysql
+CREATE TABLE table_name(
+   column_name1 datatype,
+   column_name2 datatype,
+   ...,
+   UNIQUE(column_name1,column_name2)
+);
+```
+If you define a UNIQUE constraint without specifying a name, MySQL automatically generates a name for it. To define a UNIQUE constraint with a name, you use this syntax:
+```mysql
+[CONSTRAINT constraint_name]
+UNIQUE(column_list)
+```
+**e.g.**
+```sql
+CREATE TABLE student (
+    student_id INT AUTO_INCREMENT,
+    name VARCHAR(40) NOT NULL,
+    phone VARCHAR(15) NOT NULL UNIQUE,
+    address VARCHAR(40) NOT NULL,
+    PRIMARY KEY (student_id),
+    CONSTRAINT uc_name_address UNIQUE (name , address)
+);
+```
+---
 
+### NOT NULL constraint :
+The NOT NULL constraint is a column constraint that ensures values stored in a column are not NULL.  
+**e.g.**
+```sql
+CREATE TABLE tasks (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    start_date DATE NOT NULL,
+    end_date DATE
+);
+```
+---
 
-
-
-
+### 
 
 
 
