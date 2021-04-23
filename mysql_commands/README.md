@@ -250,7 +250,8 @@ ALTER TABLE watches
 ADD model VARCHAR(100) NOT NULL;
 ```
 
-- **ALTER TABLE – Modify columns :**
+#### - ALTER TABLE – Modify columns : 
+ 
 It modifies the column of the table.  
 Suppose we need to change the data type of a column, we can use the `MODIFY` keyword.  
 **e.g.**
@@ -259,7 +260,7 @@ ALTER TABLE watches
 MODIFY note CHAR(100) NOT NULL;
 ```
 
-- **ALTER TABLE – Rename a column in a table :**
+#### - ALTER TABLE – Rename a column in a table :
 **e.g.**
 ```mysql
 ALTER TABLE watches
