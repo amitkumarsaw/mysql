@@ -46,7 +46,7 @@ It contain commands like,
 ---
 ---
 
-## DATA DEFINITION :
+# MYSQL DATA DEFINITION :
 
 ### SHOW DATABASES :
 This command shows all the databases available in your mysql server.  
@@ -292,7 +292,7 @@ It is used to drop the entire table from a database.
 
 **Syntax :**
 ```mysql
-DROP TABLE table_name
+DROP TABLE table_name;
 ```
 
 ### TRUNCATE TABLE :
@@ -306,10 +306,35 @@ DROP TABLE table_name
 TRUNCATE TABLE clocks;
 ```
 ---
+---
 
 
+# MYSQL DATA MANIPULATION :
 
+### SELECT :
 
+The SELECT statement allows you to read data from one or more tables.  
+
+**Syntax :**  
+```mysql
+SELECT select_list FROM table_name;
+```
+
+**e.g. :**  
+```mysql
+SELECT std_id FROM students;
+```
+This will return the `std_id` column from the `students` table.
+```mysql
+SELECT * FROM students;
+```
+It will retuen all the columns in the `students` table.
+```mysql
+SELECT std_id, name FROM students;
+```
+It will return the `std_id` and `name` column from the `students` table.
+
+---
 
 
 
