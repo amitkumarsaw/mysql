@@ -336,8 +336,44 @@ It will return the `std_id` and `name` column from the `students` table.
 
 ---
 
+### ORDER BY :
 
+The `ORDER BY` clause is used with the `SELECT` statement to sort the result set.  
+**Syntax :**
+```mysql
+SELECT select_list FROM table_name ORDER BY column1 [ASC|DESC], column2 [ASC|DESC], ...;
+```
 
+**e.g. :**
+```mysql
+SELECT * FROM students ORDER BY name;
+```
+Here all the columns will be displayed in the result set ordered by the names of the students alphabet wise.  
+By defalut teh result sets are displayed in `ascending` order.  
+We can also sort the result set in `descending` order.  
+**e.g. :**
+```mysql
+SELECT * FROM students ORDER BY std_id DESC;
+```
+
+---
+
+### WHERE :
+The WHERE clause allows us to specify a search condition for the result set returned by a query.
+
+**Syntax :**
+```mysql
+SELECT select_list FROM table_name WHERE search_condition;
+```
+**e.g.:**
+```mysql
+SELECT * FROM students WHERE name = "Amit";
+```
+It will display all the columns data where the name matches `Amit` string.
+
+---
+
+### 
 
 
 
