@@ -373,7 +373,7 @@ It will display all the columns data where the name matches `Amit` string.
 
 ---
 
-### 
+### DISTINCT :
 
 
 
