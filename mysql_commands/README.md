@@ -374,6 +374,45 @@ It will display all the columns data where the name matches `Amit` string.
 ---
 
 ### DISTINCT :
+In order to remove the duplicate rows from the output set, we use the `DISTINCT` clause in the `SELECT` statement.  
+**Syntax :**
+```mysql
+SELECT DISTINCT select_list FROM table_name;
+```
+**e.g. :**
+```mysql
+SELECT DISTINCT name FROM students;
+```
+
+### AND / OR :
+The `AND` operator is a logical operator that combines two or more expressions and returns true only if both expressions evaluate to true and returns false if one of the two expressions evaluate to false.  
+**e.g. :**
+```mysql
+SELECT * FROM students WHERE city='Hyderabad' AND name='Rohan';
+```
+
+The `OR` operator is a logical operator that combines two or more expressions and returns false only if both expressions evaluate to false and returns true if one of the two expressions evaluate to true.  
+**e.g. :**
+```mysql
+SELECT * FROM students WHERE city='Hyderabad' OR city='Secundrabad';
+```
+
+### IN / BETWEEN :
+
+The `IN` operator allows you to determine if a specified value matches any value in a set of values or returned by a subquery.  
+**e.g. :**
+```mysql
+SELECT * FROM students WHERE city IN ('Hyderabad', 'Secundrabad');
+```
+
+The `BETWEEN` operator is a logical operator that allows us to specify whether a value is in a range or not.  
+**e.g. :**
+```mysql
+SELECT * FROM students WHERE std_id BETWEEN 1 AND 10;
+```
+
+
+
 
 
 
